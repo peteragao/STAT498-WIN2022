@@ -2,7 +2,7 @@ name: "."
 title: "STAT 498"
 description: |
   STAT 498
-output_dir: "_site"
+output_dir: "."
 
 theme: theme.css
 navbar:

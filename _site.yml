@@ -1,0 +1,18 @@
+name: "."
+title: "STAT 498"
+description: |
+  STAT 498
+output_dir: "_site"
+
+theme: theme.css
+navbar:
+  right:
+    - text: "Syllabus"
+      href: syllabus.html
+    - text: "Lecture Slides"
+      href: slides.html
+    - text: "Exercises"
+      href: exercises.html
+    - text: "Projects"
+      href: projects.html
+output: distill::distill_article

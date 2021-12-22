@@ -13,3 +13,4 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ```
 
+This course was developed in collaboration with [Sarah Teichman](https://svteichman.github.io/).

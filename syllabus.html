@@ -2184,7 +2184,17 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   /*-- Additional custom styles --*/
   /* Add any additional CSS rules below                      */
-  </style>
+
+  table, td, th{
+    table-layout:fixed;
+    line-height: normal;
+    font-size:.5rem;
+    vertical-align: text-top;
+  }
+
+  .csl-entry {
+    font-size:.65rem;
+  }</style>
   <style type="text/css">
   /* base style */
 
@@ -2372,9 +2382,9 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </div>
 <div class="nav-right">
 <a href="syllabus.html">Syllabus</a>
+<a href="schedule.html">Schedule</a>
 <a href="slides.html">Lecture Slides</a>
-<a href="exercises.html">Exercises</a>
-<a href="projects.html">Projects</a>
+<a href="assignments.html">Assignments</a>
 <a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
 </div>
 </nav>
@@ -2392,84 +2402,72 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
 <div class="d-article">
+<p><a href="files/syllabus_handout.pdf">pdf link</a></p>
 <p><em>This syllabus is subject to change.</em></p>
 <h1 id="course-information">Course Information</h1>
 <p><strong>Instructor</strong>: Peter Gao (petergao at uw dot edu)</p>
-<p><strong>Time</strong>: Mondays and Wednesdays, 3:30 - 4:50pm</p>
-<p><strong>Location</strong>: MGH 271</p>
-<p><strong>Office hours</strong>: T 3:30-5:30, F 10:30-11:30 via Zoom <a href="https://washington.zoom.us/j/95826723086">(meeting link)</a></p>
-<p><strong>Note</strong>: When emailing either the instructor or grader, please include “[STAT 302]” at the beginning of the email header! It will help us respond to you faster.</p>
+<p><strong>Time</strong>: Tuesdays and Thursdays, 2:30 - 3:50pm</p>
+<p><strong>Location</strong>: THO 335</p>
+<p><strong>Office hours</strong>: T 12:30 - 2:20 via Zoom</p>
+<p><strong>Note</strong>: When emailing the instructor, please include “[STAT 498]” at the beginning of the email header! It will help us respond to you faster.</p>
 <h1 id="overview">Overview</h1>
-<p>This course aims to help you build a foundation of computational skills for data analysis. Data encountered in real world applications are usually context-dependent and messy, breaking many of the assumptions we make in typical statistics courses. Properly analyzing such data can require us to develop and build our own tools–ideally in a way that others are able to use and even extend our methods. Throughout this course, we will practice using computers to help us understand, summarize, visualize, and model complex data in a reproducible way.</p>
-<p>Students are assumed to have an introductory knowledge of statistics, but no formal computational training. All material is taught using the R statistical programming language. This course emphasizes:</p>
-<ul>
-<li><p><strong>Application over theory</strong>: This course does not aim to teach you statistics: we will briefly review the theory behind some of the methods covered in the course, but our focus will be implementation and application to data analysis.</p></li>
-<li><p><strong>Best practices for coding</strong>: We will dedicate a substantial amount of time to concepts such as commenting code, code style, documentation, version control, and related topics. These skills might seem tedious at first, but by building good habits, you will save yourself a lot of time and trouble in the future.</p></li>
-<li><p><strong>“Real world” workflow</strong>: Assignments and projects in this course will ask you to take the tools we study and develop throughout the course and apply them to realistic research problems. You will be asked to practice the full “workflow” of data analysis, from data cleaning and debugging to collaboration and presentation. A well designed and implemented project can demonstrate your practical experience and training to others, including future employers.</p></li>
-</ul>
+<p>Using examples from medicine, education, and criminal justice, this course surveys ethical &amp; social implications of the design, implementation, &amp; interpretation of statistical decision-making algorithms. Students will examine how algorithms interact with social categories including race, class, &amp; gender, preserving or reshaping existing inequities. Students will evaluate statistical frameworks for balancing fairness &amp; privacy with efficiency.</p>
+<p>Course objectives</p>
+<ol type="1">
+<li><p>Identify and discuss ethical considerations related to the design, implementation, and results of decision making algorithms.</p></li>
+<li><p>Examine historical uses of data in decision making and draw connections to modern algorithmic decision making systems in fields including medicine, education, and criminal justice.</p></li>
+<li><p>Understand and critique statistical approaches to understanding fairness and privacy, especially as they pertain to data-driven decision making.</p></li>
+<li><p>Practice communicating about ethical considerations in data science through writing, discussion, and presentation.</p></li>
+</ol>
 <h1 id="outline">Outline</h1>
-<p>In this course, we will learn fundamental concepts related to programming, statistical computing, and data analysis. Points of emphasis include:</p>
+<p>In this course, we will cover the following:</p>
 <ul>
-<li><p>Programming fundamentals</p></li>
-<li><p>Data visualization</p></li>
-<li><p>Data cleaning/manipulation</p></li>
-<li><p>Version control and git</p></li>
-<li><p>Debugging</p></li>
-<li><p>Computation for statistical inference</p></li>
-<li><p>Computation for statistical prediction</p></li>
+<li>Introduction to ethics and algorithms</li>
+<li>Algorithmic fairness and bias</li>
+<li>Facial recognition technologies</li>
+<li>Algorithms in the public and private spheres</li>
+<li>Privacy and surveillance</li>
+<li>Paths forward</li>
+<li>Final Presentations</li>
 </ul>
 <h1 id="course-structure">Course structure</h1>
-<p>Typically, each 80 minute class session will be broken up into a 45 minute lecture, a 5 minute break, and a 30 minute lab. Lab time will be an opportunity for you to practice coding, work collaboratively on assignments, and ask for help.</p>
 <ul>
-<li><p><strong>Short Labs</strong>: On most Mondays, you will be assigned Short Labs. These are designed to be completed during lab or shortly after and will be due at the start of the next class. At the end of the quarter, your lowest Short Lab grade will be dropped. They will be graded on the following two point scale:</p>
+<li><p><strong>In-class Discussion (10%)</strong>: You will be expected to attend class regularly and to participate in class activities and discussions. Please try to bring something to each class: a question, an idea, a connection, etc. In addition, you will serve as a designated discussant for <strong>two</strong> class sessions during the quarter. As a discussant, you will prepare discussion questions in response to readings and be called upon to respond to questions that arise during class. More detailed instructions will be provided at the start of the quarter.</p></li>
+<li><p><strong>In-class Work (10%)</strong>: In order to give students the flexibility to miss class as personal/health matters arise, attendance will not contribute to final grades. Instead, students will be asked to complete brief in-class assignments, which students may submit in person or online if they are unable to attend. You will receive zero, half, or full credit based upon completeness and depth of your responses.</p></li>
+<li><p><strong>Long Responses (45%)</strong>: Throughout the quarter, students will complete three writing assignments. These assignments ask students to write brief memos that could be used to communicate about issues related to algorithmic decision systems to a general public. These responses will be graded according to completeness and depth of your work.</p>
 <ul>
-<li>0: indicates incomplete or unacceptable work</li>
-<li>1: indicates a good faith effort towards completing &gt;75% of the assignment</li>
-<li>2: indicates a good faith effort towards completing the entire assignment.</li>
+<li>Response 1 asks students to study an algorithm and identify potential ethical concerns.</li>
+<li>Response 2 concerns statistical frameworks for assessing algorithmic bias and fairness.</li>
+<li>Response 3 concerns forms of resistance to algorithmic decision systems.</li>
 </ul></li>
-<li><p><strong>Labs</strong>: On most Wednesdays, you will be assigned Labs. These are extended, more complicated assignments that you will likely not be able to complete during class. They will be due at the start of the next class.</p></li>
-<li><p><strong>Projects</strong>: Instead of exams, you will be assigned three projects throughout the course. We will dedicate at least two lab sessions to each project and you will have about one week to complete each.</p>
-<ul>
-<li>Project 1 focuses on data manipulation and visualization.</li>
-<li>Project 2 focuses on practicing real-world data analysis skills.</li>
-<li>Project 3 focuses on version control and data analysis workflow.</li>
-</ul></li>
-<li><p><strong>Late Work</strong>: In general, the late policy is as follows: Any assignment that is received late but less than 24 hours late will receive a grade penalty of 25%. Any assignment that is received 24–48 hours late will receive a grade penalty of 50%. Assignments will not be accepted more than 48 hours late. <strong>That said, if you communicate directly with me before an assignment is due, I will often be willing to relax a deadline.</strong></p></li>
+<li><p><strong>Final Project (35%)</strong>: In groups or by yourself, you will select a topic from class and extend our discussion (ex. By further examining the human impacts of a given algorithm). Halfway through the course, you will submit a final project proposal. During the 10th week, you will submit a written report and self assessment and present a brief talk (&lt; 10 minutes) in-class.</p></li>
 </ul>
-<h1 id="grading">Grading</h1>
-<p>Your final grade will be calculated as follows:</p>
-<ul>
-<li>15%: Short Labs</li>
-<li>25%: Labs</li>
-<li>10%: Minimum grade from Project 1 and Project 2</li>
-<li>20%: Maximum grade from Project 1 and Project 2</li>
-<li>30%: Project 3</li>
-<li>2% (extra credit): Piazza discussion participation. Both questions and answers will be considered.</li>
-</ul>
-<p>Final grades will be curved, but only to help you. Consistent and excellent work will always be rewarded with an excellent grade, regardless of the performance of the rest of the class.</p>
-<h1 id="returning-to-in-person-learning">Returning to in-person learning</h1>
+<p>Obtaining a good grade in this class will depend on your ability to stay organized and complete readings and assignments on time, but if you attend class with the goal of helping us to build a healthy discussion, you can and should be successful.</p>
+<p>In general, the late policy is as follows: Any assignment that is received late but less than 24 hours late will receive a grade penalty of 25%. Any assignment that is received 24–48 hours late will receive a grade penalty of 50%. Assignments will not be accepted more than 48 hours late. <strong>That said, if you communicate directly with me before an assignment is due, I will often be willing to relax a deadline.</strong></p>
 <h3 id="expectations">Expectations</h3>
 <p>The COVID-19 pandemic has and will continue to present many of us with unforeseen difficulties. I encourage all of you to prioritize the health and safety of yourselves and those around you and would be happy to make accommodations that help you to do so. In addition, I hope that we can be patient with one another as we begin transitioning back to in-person learning, as it is likely that not everything will go to plan. Please feel free to reach out to me via email at any point to discuss any concerns you may have about the course.</p>
 <h3 id="keeping-each-other-safe">Keeping each other safe</h3>
-<p>I am thrilled to be teaching in person and I hope you are excited to be back on campus as well. As we return to physical classrooms, please be respectful of your classmates’ boundaries and precautions–we are all readjusting to in-person learning. In addition, I hope we will all make every effort to keep ourselves and our classmates safe. If you test positive or are exposed to possible infection, I encourage you to err on the side of caution with regards to attending classes and would be happy to make accomodations that allow you to do so. I will make high-quality recordings of lecture and additional office hours available to students that are absent due to quarantine.</p>
+<p>I am thrilled to be teaching in person and I hope you are excited to be back on campus as well. As we return to physical classrooms, please be respectful of your classmates’ boundaries and precautions–we are all readjusting to in-person learning. In addition, I hope we will all make every effort to keep ourselves and our classmates safe. If you test positive or are exposed to possible infection, I encourage you to err on the side of caution with regards to attending classes and would be happy to make accommodations that allow you to do so. I will make high-quality recordings of lecture and additional office hours available to students that are absent due to quarantine.</p>
 <h1 id="classroom-environment">Classroom environment</h1>
 <h3 id="names-pronouns">Names &amp; Pronouns</h3>
 <p>Everyone deserves to be addressed as they would like. Feel free to send us your preferred name and correct pronouns at any time.</p>
-<h3 id="personal-computers">Personal computers</h3>
-<p>If you do not have a personal computer, you can borrow one for free from UW through the Student Technology Loan Program. In general, if you have trouble accessing a computer, please contact me so we can make sure you have the resources you need to learn.</p>
 <h3 id="feedback">Feedback</h3>
-<p>I encourage and appreciate your feedback throughout the quarter. You are welcome to provide feedback on any aspect of the course at any time via email or in person. If you would prefer to do so confidentially, you can do so through the form <a href="https://forms.gle/pyjQB57dqyqEq3M99">here</a>.</p>
-<h3 id="collaboration">Collaboration</h3>
-<p>On most assignments, collaboration is allowed and encouraged. You may discuss problems, approaches, and solutions with your classmates. Acceptable collaboration is limited to your classmates in this course and you must clearly include on any collaborative work the name(s) of anyone with whom you worked. Additionally, all submitted work must be your own; you should not submit code or answers copied from any resource including your classmates. Plagiarism and cheating is easy for us to detect and can lead to serious negative consequences for you (see Academic Integrity below). If you have any questions regarding this policy, please ask for clarification.</p>
-<h3 id="piazza-discussion">Piazza Discussion</h3>
-<p>You are encouraged to participate on the Piazza discussion forum by posting questions about assignments and answering questions from other students. Posts may not include substantial amounts of code that can be used for a solution to any problem, but may include code snippets within reason. Participation, in the form of both questions and answers, can earn you up to 2% extra credit for your final grade. Posts will be evaluated based on how substantive and helpful they are to the class.</p>
+<p>I encourage and appreciate your feedback throughout the quarter. You are welcome to provide feedback on any aspect of the course at any time via email or in person. If you would prefer to do so confidentially, you can do so through the form [here]</p>
+<h3 id="participation-expectations">Participation expectations</h3>
+<p>Above all, we are trying to build a space for spirited discussion and learning. Come to class prepared to share what you have learned and to ask questions of us and your classmates. To be more specific:</p>
+<ul>
+<li>Read and review the assigned texts before class. Every class, try to bring something to contribute. What kind of something? Bring a question to ask the class, an idea to share, or a connection you drew to current events or other courses you have taken. If you loved a reading–great! We want to hear about it. If you hated a reading or think that a writer has it all wrong, also great!</li>
+<li>We hope that you will feel comfortable taking risks in discussion. You do not always have to have the “right” answers or to prepare exactly what you want to say before you raise your hand. We are here to figure it out together, but you must take the first step by beginning to speak.</li>
+<li>Listen to your classmates and really consider what they have to say. We are all here to learn–challenge each other by asking questions or building on each other’s ideas. Along these lines: don’t hog the mic! Give each other time to think and speak. It is our collective responsibility to help each other feel comfortable sharing our thoughts and ideas in the class.</li>
+<li>You may sometimes feel that you do not have anything to contribute to a discussion. This is okay! We trust your judgment: sometimes the best way to contribute is by listening and taking some time to process your own thoughts.</li>
+</ul>
 <h3 id="academic-misconduct">Academic misconduct</h3>
 <p>Academic integrity is essential to this course and to your learning. On certain assignments, collaboration is allowed and encouraged when following the collaboration policy outlined above. Violations of the academic integrity policy include but are not limited to: copying from a peer, collaborating where it is not allowed, copying from an online resource, using a solutions manual, and using resources from a previous iteration of the course. Anything found in violation of this policy will be automatically given a score of 0 with no exceptions. If the situation merits, it will also be reported to the UW Student Conduct Office, at which point it will be out of my hands. If you have any questions about this policy, please do not hesitate to reach out and ask.</p>
 <p>The university’s policy on plagiarism and academic misconduct is a part of the Student Conduct Code, which cites the definition of academic misconduct in the WAC 478-121. (WAC is an abbreviation for the Washington Administrative Code, the set of state regulations for the university. The entire chapter of the WAC on the student conduct code is here <a href="http://www.washington.edu/admin/rules/policies/WAC/478-121TOC.html" class="uri">http://www.washington.edu/admin/rules/policies/WAC/478-121TOC.html</a>) According to this section of the WAC, academic misconduct includes:</p>
 <p><em>“Cheating”—such as “unauthorized assistance in taking quizzes”, “Falsification” “which is the intentional use or submission of falsified data, records, or other information including, but not limited to, records of internship or practicum experiences or attendance at any required event(s), or scholarly research”; and “Plagiarism” which includes “[t]he use, by paraphrase or direct quotation, of the published or unpublished work of another person without full and clear acknowledgment.”</em></p>
 <p>The UW Libraries have a useful guide for students at <a href="http://www.lib.washington.edu/teaching/plagiarism" class="uri">http://www.lib.washington.edu/teaching/plagiarism</a> Students found to have engaged in academic misconduct may receive a zero on the assignment (or other possible outcome).</p>
 <h3 id="conduct">Conduct</h3>
-<p>The University of Washington Student Conduct Code (WAC 478-121) defines prohibited academic and behavioral conduct and describes how the University holds students accountable as they pursue their academic goals. Allegations of misconduct by students may be referred to the appropriate campus office for investigation and resolution. More information can be found online at <a href="https://www.washington.edu/studentconduct/" class="uri">https://www.washington.edu/studentconduct/</a>}{<a href="https://www.washington.edu/studentconduct/" class="uri">https://www.washington.edu/studentconduct/</a></p>
+<p>The University of Washington Student Conduct Code (WAC 478-121) defines prohibited academic and behavioral conduct and describes how the University holds students accountable as they pursue their academic goals. Allegations of misconduct by students may be referred to the appropriate campus office for investigation and resolution. More information can be found online at <a href="https://www.washington.edu/studentconduct/" class="uri">https://www.washington.edu/studentconduct/</a>.</p>
 <h3 id="disability-resources">Disability Resources</h3>
 <p>Your experience in this class is important to me. It is the policy and practice of the University of Washington to create inclusive and accessible learning environments consistent with federal and state law. If you have already established accommodations with Disability Resources for Students (DRS), please activate your accommodations via myDRS so we can discuss how they will be implemented in this course.</p>
 <p>If you have not yet established services through DRS, but have a temporary health condition or permanent disability that requires accommodations (conditions include but not limited to; mental health, attention-related, learning, vision, hearing, physical or health impacts), contact DRS directly to set up an Access Plan. DRS facilitates the interactive process that establishes reasonable accommodations. Contact DRS at <a href="http://depts.washington.edu/uwdrs/" class="uri">http://depts.washington.edu/uwdrs/</a></p>
@@ -2483,11 +2481,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <p>Sharing recordings and other class materials outside of class that include personally identifiable student information without the written consent of those students is a violation of FERPA. State law requires consent from people to be recorded (<a href="https://apps.leg.wa.gov/rcw/default.aspx?cite=9.73.030" class="uri">https://apps.leg.wa.gov/rcw/default.aspx?cite=9.73.030</a>), please note that (1) that your participation in this class indicates your consent for course activities to be recorded, (2) you are not permitted to make your own recordings without consent from the instructor and everyone else involved, and (3) that the instructor’s recordings will be available for later playback only to students taking the course. For more information about privacy concerns, review the UW Privacy Office policies (<a href="https://privacy.uw.edu/policies/best-practices-online-conferencing/" class="uri">https://privacy.uw.edu/policies/best-practices-online-conferencing/</a>), or contact Helen Garrett, the UW’s FERPA Officer.</p>
 <h1 id="links-and-other-resources">Links and other resources</h1>
 <ul>
-<li><p><a href="https://canvas.uw.edu/courses/1483089">Canvas Page</a></p></li>
-<li><p><a href="https://cran.r-project.org/">Install R</a></p></li>
-<li><p><a href="https://rstudio.com/products/rstudio/download/#download">Install RStudio</a></p></li>
-<li><p><a href="https://bookdown.org/yihui/rmarkdown/installation.html#installation">Install RMarkdown</a></p></li>
-<li><p><a href="https://rstudio.com/resources/cheatsheets/">RStudio Cheatsheets</a></p></li>
+<li><a href="https://canvas.uw.edu/courses/1519560">Canvas Page</a></li>
 </ul>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->

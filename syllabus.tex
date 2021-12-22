@@ -1,0 +1,1369 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Syllabus},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+<!--radix_placeholder_navigation_in_header-->
+<meta name="distill:offset" content=""/>
+
+<script type="application/javascript">
+
+  window.headroom_prevent_pin = false;
+
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+
+    // initialize headroom for banner
+    var header = $('header').get(0);
+    var headerHeight = header.offsetHeight;
+    var headroom = new Headroom(header, {
+      tolerance: 5,
+      onPin : function() {
+        if (window.headroom_prevent_pin) {
+          window.headroom_prevent_pin = false;
+          headroom.unpin();
+        }
+      }
+    });
+    headroom.init();
+    if(window.location.hash)
+      headroom.unpin();
+    $(header).addClass('headroom--transition');
+
+    // offset scroll location for banner on hash change
+    // (see: https://github.com/WickyNilliams/headroom.js/issues/38)
+    window.addEventListener("hashchange", function(event) {
+      window.scrollTo(0, window.pageYOffset - (headerHeight + 25));
+    });
+
+    // responsive menu
+    $('.distill-site-header').each(function(i, val) {
+      var topnav = $(this);
+      var toggle = topnav.find('.nav-toggle');
+      toggle.on('click', function() {
+        topnav.toggleClass('responsive');
+      });
+    });
+
+    // nav dropdowns
+    $('.nav-dropbtn').click(function(e) {
+      $(this).next('.nav-dropdown-content').toggleClass('nav-dropdown-active');
+      $(this).parent().siblings('.nav-dropdown')
+         .children('.nav-dropdown-content').removeClass('nav-dropdown-active');
+    });
+    $("body").click(function(e){
+      $('.nav-dropdown-content').removeClass('nav-dropdown-active');
+    });
+    $(".nav-dropdown").click(function(e){
+      e.stopPropagation();
+    });
+  });
+</script>
+
+<style type="text/css">
+
+/* Theme (user-documented overrideables for nav appearance) */
+
+.distill-site-nav {
+  color: rgba(255, 255, 255, 0.8);
+  background-color: #0F2E3D;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.distill-site-nav a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.distill-site-nav a:hover {
+  color: white;
+}
+
+@media print {
+  .distill-site-nav {
+    display: none;
+  }
+}
+
+.distill-site-header {
+
+}
+
+.distill-site-footer {
+
+}
+
+
+/* Site Header */
+
+.distill-site-header {
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 3;
+}
+
+.distill-site-header .nav-left {
+  display: inline-block;
+  margin-left: 8px;
+}
+
+@media screen and (max-width: 768px) {
+  .distill-site-header .nav-left {
+    margin-left: 0;
+  }
+}
+
+
+.distill-site-header .nav-right {
+  float: right;
+  margin-right: 8px;
+}
+
+.distill-site-header a,
+.distill-site-header .title {
+  display: inline-block;
+  text-align: center;
+  padding: 14px 10px 14px 10px;
+}
+
+.distill-site-header .title {
+  font-size: 18px;
+  min-width: 150px;
+}
+
+.distill-site-header .logo {
+  padding: 0;
+}
+
+.distill-site-header .logo img {
+  display: none;
+  max-height: 20px;
+  width: auto;
+  margin-bottom: -4px;
+}
+
+.distill-site-header .nav-image img {
+  max-height: 18px;
+  width: auto;
+  display: inline-block;
+  margin-bottom: -3px;
+}
+
+
+
+@media screen and (min-width: 1000px) {
+  .distill-site-header .logo img {
+    display: inline-block;
+  }
+  .distill-site-header .nav-left {
+    margin-left: 20px;
+  }
+  .distill-site-header .nav-right {
+    margin-right: 20px;
+  }
+  .distill-site-header .title {
+    padding-left: 12px;
+  }
+}
+
+
+.distill-site-header .nav-toggle {
+  display: none;
+}
+
+.nav-dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.nav-dropdown .nav-dropbtn {
+  border: none;
+  outline: none;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 16px 10px;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+  margin-top: 1px;
+  z-index: 2;
+}
+
+.nav-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 200px;
+  border: 1px solid rgba(0,0,0,0.15);
+  border-radius: 4px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+  z-index: 1;
+  margin-top: 2px;
+  white-space: nowrap;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.nav-dropdown-content hr {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.nav-dropdown-active {
+  display: block;
+}
+
+.nav-dropdown-content a, .nav-dropdown-content .nav-dropdown-header {
+  color: black;
+  padding: 6px 24px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.nav-dropdown-content .nav-dropdown-header {
+  display: block;
+  padding: 5px 24px;
+  padding-bottom: 0;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #999999;
+  white-space: nowrap;
+}
+
+.nav-dropdown:hover .nav-dropbtn {
+  color: white;
+}
+
+.nav-dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.nav-right .nav-dropdown-content {
+  margin-left: -45%;
+  right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .distill-site-header a, .distill-site-header .nav-dropdown  {display: none;}
+  .distill-site-header a.nav-toggle {
+    float: right;
+    display: block;
+  }
+  .distill-site-header .title {
+    margin-left: 0;
+  }
+  .distill-site-header .nav-right {
+    margin-right: 0;
+  }
+  .distill-site-header {
+    overflow: hidden;
+  }
+  .nav-right .nav-dropdown-content {
+    margin-left: 0;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .distill-site-header.responsive {position: relative; min-height: 500px; }
+  .distill-site-header.responsive a.nav-toggle {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .distill-site-header.responsive a,
+  .distill-site-header.responsive .nav-dropdown {
+    display: block;
+    text-align: left;
+  }
+  .distill-site-header.responsive .nav-left,
+  .distill-site-header.responsive .nav-right {
+    width: 100%;
+  }
+  .distill-site-header.responsive .nav-dropdown {float: none;}
+  .distill-site-header.responsive .nav-dropdown-content {position: relative;}
+  .distill-site-header.responsive .nav-dropdown .nav-dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+/* Site Footer */
+
+.distill-site-footer {
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  z-index: 3;
+  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+/* Headroom */
+
+d-title {
+  padding-top: 6rem;
+}
+
+@media print {
+  d-title {
+    padding-top: 4rem;
+  }
+}
+
+.headroom {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.headroom--transition {
+  transition: all .4s ease-in-out;
+}
+
+.headroom--unpinned {
+  top: -100px;
+}
+
+.headroom--pinned {
+  top: 0;
+}
+
+/* adjust viewport for navbar height */
+/* helps vertically center bootstrap (non-distill) content */
+.min-vh-100 {
+  min-height: calc(100vh - 100px) !important;
+}
+
+</style>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
+<script src="site_libs/headroom-0.9.4/headroom.min.js"></script>
+<script src="site_libs/autocomplete-0.37.1/autocomplete.min.js"></script>
+<script src="site_libs/fuse-6.4.1/fuse.min.js"></script>
+
+<script type="application/javascript">
+
+function getMeta(metaName) {
+  var metas = document.getElementsByTagName('meta');
+  for (let i = 0; i < metas.length; i++) {
+    if (metas[i].getAttribute('name') === metaName) {
+      return metas[i].getAttribute('content');
+    }
+  }
+  return '';
+}
+
+function offsetURL(url) {
+  var offset = getMeta('distill:offset');
+  return offset ? offset + '/' + url : url;
+}
+
+function createFuseIndex() {
+
+  // create fuse index
+  var options = {
+    keys: [
+      { name: 'title', weight: 20 },
+      { name: 'categories', weight: 15 },
+      { name: 'description', weight: 10 },
+      { name: 'contents', weight: 5 },
+    ],
+    ignoreLocation: true,
+    threshold: 0
+  };
+  var fuse = new window.Fuse([], options);
+
+  // fetch the main search.json
+  return fetch(offsetURL('search.json'))
+    .then(function(response) {
+      if (response.status == 200) {
+        return response.json().then(function(json) {
+          // index main articles
+          json.articles.forEach(function(article) {
+            fuse.add(article);
+          });
+          // download collections and index their articles
+          return Promise.all(json.collections.map(function(collection) {
+            return fetch(offsetURL(collection)).then(function(response) {
+              if (response.status === 200) {
+                return response.json().then(function(articles) {
+                  articles.forEach(function(article) {
+                    fuse.add(article);
+                  });
+                })
+              } else {
+                return Promise.reject(
+                  new Error('Unexpected status from search index request: ' +
+                            response.status)
+                );
+              }
+            });
+          })).then(function() {
+            return fuse;
+          });
+        });
+
+      } else {
+        return Promise.reject(
+          new Error('Unexpected status from search index request: ' +
+                      response.status)
+        );
+      }
+    });
+}
+
+window.document.addEventListener("DOMContentLoaded", function (event) {
+
+  // get search element (bail if we don't have one)
+  var searchEl = window.document.getElementById('distill-search');
+  if (!searchEl)
+    return;
+
+  createFuseIndex()
+    .then(function(fuse) {
+
+      // make search box visible
+      searchEl.classList.remove('hidden');
+
+      // initialize autocomplete
+      var options = {
+        autoselect: true,
+        hint: false,
+        minLength: 2,
+      };
+      window.autocomplete(searchEl, options, [{
+        source: function(query, callback) {
+          const searchOptions = {
+            isCaseSensitive: false,
+            shouldSort: true,
+            minMatchCharLength: 2,
+            limit: 10,
+          };
+          var results = fuse.search(query, searchOptions);
+          callback(results
+            .map(function(result) { return result.item; })
+          );
+        },
+        templates: {
+          suggestion: function(suggestion) {
+            var img = suggestion.preview && Object.keys(suggestion.preview).length > 0
+              ? `<img src="${offsetURL(suggestion.preview)}"</img>`
+              : '';
+            var html = `
+              <div class="search-item">
+                <h3>${suggestion.title}</h3>
+                <div class="search-item-description">
+                  ${suggestion.description || ''}
+                </div>
+                <div class="search-item-preview">
+                  ${img}
+                </div>
+              </div>
+            `;
+            return html;
+          }
+        }
+      }]).on('autocomplete:selected', function(event, suggestion) {
+        window.location.href = offsetURL(suggestion.path);
+      });
+      // remove inline display style on autocompleter (we want to
+      // manage responsive display via css)
+      $('.algolia-autocomplete').css("display", "");
+    })
+    .catch(function(error) {
+      console.log(error);
+    });
+
+});
+
+</script>
+
+<style type="text/css">
+
+.nav-search {
+  font-size: x-small;
+}
+
+/* Algolioa Autocomplete */
+
+.algolia-autocomplete {
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: sub;
+  background-color: white;
+  color: black;
+  padding: 6px;
+  padding-top: 8px;
+  padding-bottom: 0;
+  border-radius: 6px;
+  border: 1px #0F2E3D solid;
+  width: 180px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .distill-site-nav .algolia-autocomplete {
+    display: none;
+    visibility: hidden;
+  }
+  .distill-site-nav.responsive .algolia-autocomplete {
+    display: inline-block;
+    visibility: visible;
+  }
+  .distill-site-nav.responsive .algolia-autocomplete .aa-dropdown-menu {
+    margin-left: 0;
+    width: 400px;
+    max-height: 400px;
+  }
+}
+
+.algolia-autocomplete .aa-input, .algolia-autocomplete .aa-hint {
+  width: 90%;
+  outline: none;
+  border: none;
+}
+
+.algolia-autocomplete .aa-hint {
+  color: #999;
+}
+.algolia-autocomplete .aa-dropdown-menu {
+  width: 550px;
+  max-height: 70vh;
+  overflow-x: visible;
+  overflow-y: scroll;
+  padding: 5px;
+  margin-top: 3px;
+  margin-left: -150px;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #999;
+  border-top: none;
+}
+
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion {
+  cursor: pointer;
+  padding: 5px 4px;
+  border-bottom: 1px solid #eee;
+}
+
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion:last-of-type {
+  border-bottom: none;
+  margin-bottom: 2px;
+}
+
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item {
+  overflow: hidden;
+  font-size: 0.8em;
+  line-height: 1.4em;
+}
+
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item h3 {
+  font-size: 1rem;
+  margin-block-start: 0;
+  margin-block-end: 5px;
+}
+
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-description {
+  display: inline-block;
+  overflow: hidden;
+  height: 2.8em;
+  width: 80%;
+  margin-right: 4%;
+}
+
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview {
+  display: inline-block;
+  width: 15%;
+}
+
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview img {
+  height: 3em;
+  width: auto;
+  display: none;
+}
+
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview img[src] {
+  display: initial;
+}
+
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion.aa-cursor {
+  background-color: #eee;
+}
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion em {
+  font-weight: bold;
+  font-style: normal;
+}
+
+</style>
+
+
+<!--/radix_placeholder_navigation_in_header-->
+<!--radix_placeholder_site_in_header-->
+<!--/radix_placeholder_site_in_header-->
+
+<style type="text/css">
+body {
+  padding-top: 60px;
+}
+</style>
+<style type="text/css">
+/* base variables */
+
+/* Edit the CSS properties in this file to create a custom
+   Distill theme. Only edit values in the right column
+   for each row; values shown are the CSS defaults.
+   To return any property to the default,
+   you may set its value to: unset
+   All rows must end with a semi-colon.                      */
+
+/* Optional: embed custom fonts here with `@import`          */
+/* This must remain at the top of this file.                 */
+
+
+
+html {
+  /*-- Main font sizes --*/
+  --title-size:      50px;
+  --body-size:       1.06rem;
+  --code-size:       14px;
+  --aside-size:      12px;
+  --fig-cap-size:    13px;
+  /*-- Main font colors --*/
+  --title-color:     #000000;
+  --header-color:    rgba(0, 0, 0, 0.8);
+  --body-color:      rgba(0, 0, 0, 0.8);
+  --aside-color:     rgba(0, 0, 0, 0.6);
+  --fig-cap-color:   rgba(0, 0, 0, 0.6);
+  /*-- Specify custom fonts ~~~ must be imported above   --*/
+  --heading-font:    sans-serif;
+  --mono-font:       monospace;
+  --body-font:       sans-serif;
+  --navbar-font:     sans-serif;  /* websites + blogs only */
+}
+
+/*-- ARTICLE METADATA --*/
+d-byline {
+  --heading-size:    0.6rem;
+  --heading-color:   rgba(0, 0, 0, 0.5);
+  --body-size:       0.8rem;
+  --body-color:      rgba(0, 0, 0, 0.8);
+}
+
+/*-- ARTICLE TABLE OF CONTENTS --*/
+.d-contents {
+  --heading-size:    18px;
+  --contents-size:   13px;
+}
+
+/*-- ARTICLE APPENDIX --*/
+d-appendix {
+  --heading-size:    15px;
+  --heading-color:   rgba(0, 0, 0, 0.65);
+  --text-size:       0.8em;
+  --text-color:      rgba(0, 0, 0, 0.5);
+}
+
+/*-- WEBSITE HEADER + FOOTER --*/
+/* These properties only apply to Distill sites and blogs  */
+
+.distill-site-header {
+  --title-size:       18px;
+  --text-color:       rgba(255, 255, 255, 0.8);
+  --text-size:        15px;
+  --hover-color:      white;
+  --bkgd-color:       #0F2E3D;
+}
+
+.distill-site-footer {
+  --text-color:       rgba(255, 255, 255, 0.8);
+  --text-size:        15px;
+  --hover-color:      white;
+  --bkgd-color:       #0F2E3D;
+}
+
+/*-- Additional custom styles --*/
+/* Add any additional CSS rules below                      */
+</style>
+<style type="text/css">
+/* base variables */
+
+/* Edit the CSS properties in this file to create a custom
+   Distill theme. Only edit values in the right column
+   for each row; values shown are the CSS defaults.
+   To return any property to the default,
+   you may set its value to: unset
+   All rows must end with a semi-colon.                      */
+
+/* Optional: embed custom fonts here with `@import`          */
+/* This must remain at the top of this file.                 */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans');
+
+
+html {
+  /*-- Main font sizes --*/
+  --title-size:      50px;
+  --body-size:       1.06rem;
+  --code-size:       14px;
+  --aside-size:      12px;
+  --fig-cap-size:    13px;
+  /*-- Main font colors --*/
+  --title-color:     #000000;
+  --header-color:    rgba(0, 0, 0, 0.8);
+  --body-color:      rgba(0, 0, 0, 0.8);
+  --aside-color:     rgba(0, 0, 0, 0.6);
+  --fig-cap-color:   rgba(0, 0, 0, 0.6);
+  /*-- Specify custom fonts ~~~ must be imported above   --*/
+  --heading-font:    "Work Sans",sans-serif;
+  --mono-font:       monospace;
+  --body-font:       "Work Sans",sans-serif;
+  --navbar-font:     "Work Sans",sans-serif;  /* websites + blogs only */
+}
+
+/*-- ARTICLE METADATA --*/
+d-byline {
+  --heading-size:    0.6rem;
+  --heading-color:   rgba(0, 0, 0, 0.5);
+  --body-size:       0.8rem;
+  --body-color:      rgba(0, 0, 0, 0.8);
+}
+
+/*-- ARTICLE TABLE OF CONTENTS --*/
+.d-contents {
+  --heading-size:    18px;
+  --contents-size:   13px;
+}
+
+/*-- ARTICLE APPENDIX --*/
+d-appendix {
+  --heading-size:    15px;
+  --heading-color:   rgba(0, 0, 0, 0.65);
+  --text-size:       0.8em;
+  --text-color:      rgba(0, 0, 0, 0.5);
+}
+
+/*-- WEBSITE HEADER + FOOTER --*/
+/* These properties only apply to Distill sites and blogs  */
+
+.distill-site-header {
+  --title-size:       18px;
+  --text-color:       rgba(255, 255, 255, 0.8);
+  --text-size:        15px;
+  --hover-color:      white;
+  --bkgd-color:       #4b2e83;
+}
+
+.distill-site-footer {
+  --text-color:       rgba(255, 255, 255, 0.8);
+  --text-size:        15px;
+  --hover-color:      white;
+  --bkgd-color:       #0F2E3D;
+}
+
+/*-- Additional custom styles --*/
+/* Add any additional CSS rules below                      */
+</style>
+<style type="text/css">
+/* base style */
+
+/* FONT FAMILIES */
+
+:root {
+  --heading-default: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+  --mono-default: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  --body-default: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+body,
+.posts-list .post-preview p,
+.posts-list .description p {
+  font-family: var(--body-font), var(--body-default);
+}
+
+h1, h2, h3, h4, h5, h6,
+.posts-list .post-preview h2,
+.posts-list .description h2 {
+  font-family: var(--heading-font), var(--heading-default);
+}
+
+d-article div.sourceCode code,
+d-article pre code {
+  font-family: var(--mono-font), var(--mono-default);
+}
+
+
+/*-- TITLE --*/
+d-title h1,
+.posts-list > h1 {
+  color: var(--title-color, black);
+}
+
+d-title h1 {
+  font-size: var(--title-size, 50px);
+}
+
+/*-- HEADERS --*/
+d-article h1,
+d-article h2,
+d-article h3,
+d-article h4,
+d-article h5,
+d-article h6 {
+  color: var(--header-color, rgba(0, 0, 0, 0.8));
+}
+
+/*-- BODY --*/
+d-article > p,  /* only text inside of <p> tags */
+d-article > ul, /* lists */
+d-article > ol {
+  color: var(--body-color, rgba(0, 0, 0, 0.8));
+  font-size: var(--body-size, 1.06rem);
+}
+
+
+/*-- CODE --*/
+d-article div.sourceCode code,
+d-article pre code {
+  font-size: var(--code-size, 14px);
+}
+
+/*-- ASIDE --*/
+d-article aside {
+  font-size: var(--aside-size, 12px);
+  color: var(--aside-color, rgba(0, 0, 0, 0.6));
+}
+
+/*-- FIGURE CAPTIONS --*/
+figure .caption,
+figure figcaption,
+.figure .caption {
+  font-size: var(--fig-cap-size, 13px);
+  color: var(--fig-cap-color, rgba(0, 0, 0, 0.6));
+}
+
+/*-- METADATA --*/
+d-byline h3 {
+  font-size: var(--heading-size, 0.6rem);
+  color: var(--heading-color, rgba(0, 0, 0, 0.5));
+}
+
+d-byline {
+  font-size: var(--body-size, 0.8rem);
+  color: var(--body-color, rgba(0, 0, 0, 0.8));
+}
+
+d-byline a,
+d-article d-byline a {
+  color: var(--body-color, rgba(0, 0, 0, 0.8));
+}
+
+/*-- TABLE OF CONTENTS --*/
+.d-contents nav h3 {
+  font-size: var(--heading-size, 18px);
+}
+
+.d-contents nav a {
+  font-size: var(--contents-size, 13px);
+}
+
+/*-- APPENDIX --*/
+d-appendix h3 {
+  font-size: var(--heading-size, 15px);
+  color: var(--heading-color, rgba(0, 0, 0, 0.65));
+}
+
+d-appendix {
+  font-size: var(--text-size, 0.8em);
+  color: var(--text-color, rgba(0, 0, 0, 0.5));
+}
+
+d-appendix d-footnote-list a.footnote-backlink {
+  color: var(--text-color, rgba(0, 0, 0, 0.5));
+}
+
+/*-- WEBSITE HEADER + FOOTER --*/
+.distill-site-header .title {
+  font-size: var(--title-size, 18px);
+  font-family: var(--navbar-font), var(--heading-default);
+}
+
+.distill-site-header a,
+.nav-dropdown .nav-dropbtn {
+  font-family: var(--navbar-font), var(--heading-default);
+}
+
+.nav-dropdown .nav-dropbtn {
+  color: var(--text-color, rgba(255, 255, 255, 0.8));
+  font-size: var(--text-size, 15px);
+}
+
+.distill-site-header a:hover,
+.nav-dropdown:hover .nav-dropbtn {
+  color: var(--hover-color, white);
+}
+
+.distill-site-header {
+  font-size: var(--text-size, 15px);
+  color: var(--text-color, rgba(255, 255, 255, 0.8));
+  background-color: var(--bkgd-color, #0F2E3D);
+}
+
+.distill-site-footer {
+  font-size: var(--text-size, 15px);
+  color: var(--text-color, rgba(255, 255, 255, 0.8));
+  background-color: var(--bkgd-color, #0F2E3D);
+}
+
+.distill-site-footer a:hover {
+  color: var(--hover-color, white);
+}</style>
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+
+\title{Syllabus}
+\author{}
+\date{\vspace{-2.5em}}
+
+\begin{document}
+\maketitle
+
+<!--radix_placeholder_navigation_before_body-->
+<header class="header header--fixed" role="banner">
+<nav class="distill-site-nav distill-site-header">
+<div class="nav-left">
+<a href="index.html" class="title">STAT 498</a>
+</div>
+<div class="nav-right">
+<a href="syllabus.html">Syllabus</a>
+<a href="slides.html">Lecture Slides</a>
+<a href="exercises.html">Exercises</a>
+<a href="projects.html">Projects</a>
+<a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
+</div>
+</nav>
+</header>
+<!--/radix_placeholder_navigation_before_body-->
+
+<!--radix_placeholder_site_before_body-->
+<!--/radix_placeholder_site_before_body-->
+
+\emph{This syllabus is subject to change.}
+
+\hypertarget{course-information}{%
+\section{Course Information}\label{course-information}}
+
+\textbf{Instructor}: Peter Gao (petergao at uw dot edu)
+
+\textbf{Time}: Tuesdays and Thursdays, 2:30 - 3:50pm
+
+\textbf{Location}: THO 335
+
+\textbf{Office hours}: T 12:30 - 2:20 via Zoom
+
+\textbf{Note}: When emailing the instructor, please include ``{[}STAT
+498{]}'' at the beginning of the email header! It will help us respond
+to you faster.
+
+\hypertarget{overview}{%
+\section{Overview}\label{overview}}
+
+Using examples from medicine, education, and criminal justice, this
+course surveys ethical \& social implications of the design,
+implementation, \& interpretation of statistical decision-making
+algorithms. Students will examine how algorithms interact with social
+categories including race, class, \& gender, preserving or reshaping
+existing inequities. Students will evaluate statistical frameworks for
+balancing fairness \& privacy with efficiency.
+
+Course objectives
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Identify and discuss ethical considerations related to the design,
+  implementation, and results of decision making algorithms.
+\item
+  Examine historical uses of data in decision making and draw
+  connections to modern algorithmic decision making systems in fields
+  including medicine, education, and criminal justice.
+\item
+  Understand and critique statistical approaches to understanding
+  fairness and privacy, especially as they pertain to data-driven
+  decision making.
+\item
+  Practice communicating about ethical considerations in data science
+  through writing, discussion, and presentation.
+\end{enumerate}
+
+\hypertarget{outline}{%
+\section{Outline}\label{outline}}
+
+In this course, we will cover the following:
+
+\begin{itemize}
+\tightlist
+\item
+  Introduction to ethics and algorithms
+\item
+  Algorithmic fairness and bias
+\item
+  Facial recognition technologies
+\item
+  Algorithms in the public and private spheres
+\item
+  Privacy and surveillance
+\item
+  Paths forward
+\item
+  Final Presentations
+\end{itemize}
+
+\hypertarget{course-structure}{%
+\section{Course structure}\label{course-structure}}
+
+\begin{itemize}
+\item
+  \textbf{In-class Discussion (10\%)}: You will be expected to attend
+  class regularly and to participate in class activities and
+  discussions. Please try to bring something to each class: a question,
+  an idea, a connection, etc. In addition, you will serve as a
+  designated discussant for \textbf{two} class sessions during the
+  quarter. As a discussant, you will prepare discussion questions in
+  response to readings and be called upon to respond to questions that
+  arise during class. More detailed instructions will be provided at the
+  start of the quarter.
+\item
+  \textbf{In-class Work (10\%)}: In order to give students the
+  flexibility to miss class as personal/health matters arise, attendance
+  will not contribute to final grades. Instead, students will be asked
+  to complete brief in-class assignments, which students may submit in
+  person or online if they are unable to attend. You will receive zero,
+  half, or full credit based upon completeness and depth of your
+  responses.
+\item
+  \textbf{Long Responses (45\%)}: Throughout the quarter, students will
+  complete three writing assignments. These assignments ask students to
+  write brief memos that could be used to communicate about issues
+  related to algorithmic decision systems to a general public. These
+  responses will be graded according to completeness and depth of your
+  work.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Response 1 asks students to study an algorithm and identify
+    potential ethical concerns.
+  \item
+    Response 2 concerns statistical frameworks for assessing algorithmic
+    bias and fairness.
+  \item
+    Response 3 concerns forms of resistance to algorithmic decision
+    systems.
+  \end{itemize}
+\item
+  \textbf{Final Project (35\%)}: In groups or by yourself, you will
+  select a topic from class and extend our discussion (ex. By further
+  examining the human impacts of a given algorithm). Halfway through the
+  course, you will submit a final project proposal. During the 10th
+  week, you will submit a written report and self assessment and present
+  a brief talk (\textless{} 10 minutes) in-class.
+\end{itemize}
+
+Obtaining a good grade in this class will depend on your ability to stay
+organized and complete readings and assignments on time, but if you
+attend class with the goal of helping us to build a healthy discussion,
+you can and should be successful.
+
+In general, the late policy is as follows: Any assignment that is
+received late but less than 24 hours late will receive a grade penalty
+of 25\%. Any assignment that is received 24--48 hours late will receive
+a grade penalty of 50\%. Assignments will not be accepted more than 48
+hours late. \textbf{That said, if you communicate directly with me
+before an assignment is due, I will often be willing to relax a
+deadline.}
+
+\hypertarget{expectations}{%
+\subsubsection{Expectations}\label{expectations}}
+
+The COVID-19 pandemic has and will continue to present many of us with
+unforeseen difficulties. I encourage all of you to prioritize the health
+and safety of yourselves and those around you and would be happy to make
+accommodations that help you to do so. In addition, I hope that we can
+be patient with one another as we begin transitioning back to in-person
+learning, as it is likely that not everything will go to plan. Please
+feel free to reach out to me via email at any point to discuss any
+concerns you may have about the course.
+
+\hypertarget{keeping-each-other-safe}{%
+\subsubsection{Keeping each other safe}\label{keeping-each-other-safe}}
+
+I am thrilled to be teaching in person and I hope you are excited to be
+back on campus as well. As we return to physical classrooms, please be
+respectful of your classmates' boundaries and precautions--we are all
+readjusting to in-person learning. In addition, I hope we will all make
+every effort to keep ourselves and our classmates safe. If you test
+positive or are exposed to possible infection, I encourage you to err on
+the side of caution with regards to attending classes and would be happy
+to make accommodations that allow you to do so. I will make high-quality
+recordings of lecture and additional office hours available to students
+that are absent due to quarantine.
+
+\hypertarget{classroom-environment}{%
+\section{Classroom environment}\label{classroom-environment}}
+
+\hypertarget{names-pronouns}{%
+\subsubsection{Names \& Pronouns}\label{names-pronouns}}
+
+Everyone deserves to be addressed as they would like. Feel free to send
+us your preferred name and correct pronouns at any time.
+
+\hypertarget{feedback}{%
+\subsubsection{Feedback}\label{feedback}}
+
+I encourage and appreciate your feedback throughout the quarter. You are
+welcome to provide feedback on any aspect of the course at any time via
+email or in person. If you would prefer to do so confidentially, you can
+do so through the form {[}here{]}
+
+\hypertarget{participation-expectations}{%
+\subsubsection{Participation
+expectations}\label{participation-expectations}}
+
+Above all, we are trying to build a space for spirited discussion and
+learning. Come to class prepared to share what you have learned and to
+ask questions of us and your classmates. To be more specific:
+
+\begin{itemize}
+\tightlist
+\item
+  Read and review the assigned texts before class. Every class, try to
+  bring something to contribute. What kind of something? Bring a
+  question to ask the class, an idea to share, or a connection you drew
+  to current events or other courses you have taken. If you loved a
+  reading--great! We want to hear about it. If you hated a reading or
+  think that a writer has it all wrong, also great!
+\item
+  We hope that you will feel comfortable taking risks in discussion. You
+  do not always have to have the ``right'' answers or to prepare exactly
+  what you want to say before you raise your hand. We are here to figure
+  it out together, but you must take the first step by beginning to
+  speak.
+\item
+  Listen to your classmates and really consider what they have to say.
+  We are all here to learn--challenge each other by asking questions or
+  building on each other's ideas. Along these lines: don't hog the mic!
+  Give each other time to think and speak. It is our collective
+  responsibility to help each other feel comfortable sharing our
+  thoughts and ideas in the class.
+\item
+  You may sometimes feel that you do not have anything to contribute to
+  a discussion. This is okay! We trust your judgment: sometimes the best
+  way to contribute is by listening and taking some time to process your
+  own thoughts.
+\end{itemize}
+
+\hypertarget{academic-misconduct}{%
+\subsubsection{Academic misconduct}\label{academic-misconduct}}
+
+Academic integrity is essential to this course and to your learning. On
+certain assignments, collaboration is allowed and encouraged when
+following the collaboration policy outlined above. Violations of the
+academic integrity policy include but are not limited to: copying from a
+peer, collaborating where it is not allowed, copying from an online
+resource, using a solutions manual, and using resources from a previous
+iteration of the course. Anything found in violation of this policy will
+be automatically given a score of 0 with no exceptions. If the situation
+merits, it will also be reported to the UW Student Conduct Office, at
+which point it will be out of my hands. If you have any questions about
+this policy, please do not hesitate to reach out and ask.
+
+The university's policy on plagiarism and academic misconduct is a part
+of the Student Conduct Code, which cites the definition of academic
+misconduct in the WAC 478-121. (WAC is an abbreviation for the
+Washington Administrative Code, the set of state regulations for the
+university. The entire chapter of the WAC on the student conduct code is
+here
+\url{http://www.washington.edu/admin/rules/policies/WAC/478-121TOC.html})
+According to this section of the WAC, academic misconduct includes:
+
+\emph{``Cheating''---such as ``unauthorized assistance in taking
+quizzes'', ``Falsification'' ``which is the intentional use or
+submission of falsified data, records, or other information including,
+but not limited to, records of internship or practicum experiences or
+attendance at any required event(s), or scholarly research''; and
+``Plagiarism'' which includes ``{[}t{]}he use, by paraphrase or direct
+quotation, of the published or unpublished work of another person
+without full and clear acknowledgment.''}
+
+The UW Libraries have a useful guide for students at
+\url{http://www.lib.washington.edu/teaching/plagiarism} Students found
+to have engaged in academic misconduct may receive a zero on the
+assignment (or other possible outcome).
+
+\hypertarget{conduct}{%
+\subsubsection{Conduct}\label{conduct}}
+
+The University of Washington Student Conduct Code (WAC 478-121) defines
+prohibited academic and behavioral conduct and describes how the
+University holds students accountable as they pursue their academic
+goals. Allegations of misconduct by students may be referred to the
+appropriate campus office for investigation and resolution. More
+information can be found online at
+\url{https://www.washington.edu/studentconduct/}.
+
+\hypertarget{disability-resources}{%
+\subsubsection{Disability Resources}\label{disability-resources}}
+
+Your experience in this class is important to me. It is the policy and
+practice of the University of Washington to create inclusive and
+accessible learning environments consistent with federal and state law.
+If you have already established accommodations with Disability Resources
+for Students (DRS), please activate your accommodations via myDRS so we
+can discuss how they will be implemented in this course.
+
+If you have not yet established services through DRS, but have a
+temporary health condition or permanent disability that requires
+accommodations (conditions include but not limited to; mental health,
+attention-related, learning, vision, hearing, physical or health
+impacts), contact DRS directly to set up an Access Plan. DRS facilitates
+the interactive process that establishes reasonable accommodations.
+Contact DRS at \url{http://depts.washington.edu/uwdrs/}
+
+\hypertarget{diversity-equity-and-inclusion}{%
+\subsubsection{Diversity, equity and
+inclusion}\label{diversity-equity-and-inclusion}}
+
+Diverse backgrounds, embodiments, and experiences are essential to the
+critical thinking endeavor at the heart of university education.
+Therefore, I expect you to follow the UW Student Conduct Code in your
+interactions with your colleagues and me in this course by respecting
+the many social and cultural differences among us, which may include,
+but are not limited to: age, cultural background, disability, ethnicity,
+family status, gender identity and presentation, citizenship and
+immigration status, national origin, race, religious and political
+beliefs, sex, sexual orientation, socioeconomic status, and veteran
+status.
+
+\hypertarget{religious-accommodations}{%
+\subsubsection{Religious
+accommodations}\label{religious-accommodations}}
+
+Washington state law requires that UW develop a policy for accommodation
+of student absences or significant hardship due to reasons of faith or
+conscience, or for organized religious activities. The UW's policy,
+including more information about how to request an accommodation, is
+available at
+\url{https://registrar.washington.edu/staffandfaculty/religious-accommodations-policy/}.
+
+Accommodations must be requested within the first two weeks of this
+course using the
+\url{https://registrar.washington.edu/students/religious-accommodations-request/}
+
+\hypertarget{student-privacy}{%
+\subsubsection{Student privacy}\label{student-privacy}}
+
+Note that the software used in this class (e.g.~Canvas, Zoom, Panopto)
+when used with our UW Net IDs, are FERPA compliant
+(\url{https://registrar.washington.edu/students/ferpa/}). This means
+they do not monitor student use of their service and they do not share
+student data with third parties.
+
+Sharing recordings and other class materials outside of class that
+include personally identifiable student information without the written
+consent of those students is a violation of FERPA. State law requires
+consent from people to be recorded
+(\url{https://apps.leg.wa.gov/rcw/default.aspx?cite=9.73.030}), please
+note that (1) that your participation in this class indicates your
+consent for course activities to be recorded, (2) you are not permitted
+to make your own recordings without consent from the instructor and
+everyone else involved, and (3) that the instructor's recordings will be
+available for later playback only to students taking the course. For
+more information about privacy concerns, review the UW Privacy Office
+policies
+(\url{https://privacy.uw.edu/policies/best-practices-online-conferencing/}),
+or contact Helen Garrett, the UW's FERPA Officer.
+
+\hypertarget{links-and-other-resources}{%
+\section{Links and other resources}\label{links-and-other-resources}}
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://canvas.uw.edu/courses/1519560}{Canvas Page}
+\end{itemize}
+
+<!--radix_placeholder_site_after_body-->
+<!--/radix_placeholder_site_after_body-->
+
+<!--radix_placeholder_navigation_after_body-->
+<!--/radix_placeholder_navigation_after_body-->
+
+\end{document}

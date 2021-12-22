@@ -76,3 +76,13 @@ d-appendix {
 /*-- Additional custom styles --*/
 /* Add any additional CSS rules below                      */
 
+table, td, th{
+  table-layout:fixed;
+  line-height: normal;
+  font-size:.5rem;
+  vertical-align: text-top;
+}
+
+.csl-entry {
+  font-size:.65rem;
+}

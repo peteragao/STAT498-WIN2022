@@ -1,8 +1,7 @@
 ---
-title: "Syllabus"
+output: pdf_document
 ---
-
-[pdf link](files/syllabus_handout.pdf)
+## STAT 498: Introduction to the Ethics of Algorithmic Decision Making
 
 *This syllabus is subject to change.*
 
@@ -12,7 +11,7 @@ title: "Syllabus"
 
 **Time**: Tuesdays and Thursdays, 2:30 - 3:50pm
 
-**Location**: 	THO 335
+**Location**:	THO 335
 
 **Office hours**: T 12:30 - 2:20 via Zoom 
 

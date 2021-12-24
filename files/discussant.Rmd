@@ -1,0 +1,18 @@
+---
+title: "Instructions for Discussants"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Overview
+
+Each student will be designated as one of the discussants for one class section this quarter. As a discussant, you will help me facilitate the class by outlining the key ideas in each reading and preparing discussion questions. At times, I may also call on you to briefly explain some of the ideas in the readings or to share your thoughts or opinions. Although you will be expected to read and prepare carefully, you are not expected to be able to answer every question and you will not have to be the only one speaking. Above all, I hope to see that you are making an effort to lead the discussion and to engage with questions: do not worry if you forget something from the reading or do not have the answer for a particular question. 
+
+## Instructions
+
+1. Carefully read the texts for your assigned class section and take notes on the key ideas and themes.
+2. **(5 points)** Prepare two discussion questions that you would be willing to ask your classmates. At least one of these questions should connect multiple of the readings. **Submit to Canvas a pdf with your two questions and your answers for each.** A paragraph for each answer should be enough. Full credit will be given for questions and responses that demonstrate understanding of the readings and that spark thoughtful discussions.
+3. **(5 points)** On the day of your assigned class section, attend class and participate by sharing your discussion questions and responding to the instructor's questions. If you are unable to attend in person, contact me ahead of time and we will make arrangements for you to attend virtually or to meet individually with me to complete this portion of the assignment.
+4. **(1 point extra credit, optional)** Identify an additional text/video/resource related to the readings for your assigned class and submit to Canvas a pdf with a brief summary (1-2 paragraphs) of your reading and how it relates to the other readings for the class.  

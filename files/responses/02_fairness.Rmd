@@ -1,0 +1,29 @@
+---
+title: "Long Response 1: Case Studies"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Format
+
+Length: 3-5 pages, 12 point font, double spaced. 
+
+
+## Overview
+
+
+https://themarkup.org/news/2021/03/02/major-universities-are-using-race-as-a-high-impact-predictor-of-student-success
+https://www.apmreports.org/episode/2019/08/06/college-data-tracking-students-graduation
+predictive parity vs erorr rate balance / equal prediction and equal decision
+
+In this first long response assignment, you will select and study one data-driven decision system. For the purpose of this assignment, we define an data-driven decision system as a system or process that uses computation and data to make automated predictions and decisions about individual people or groups of people. For example, although Newton's method is an algorithm, it is not in itself an data-driven decision system. Some examples that would be appropriate include recommendation systems used by technology and social media companies, diagnostic algorithms used in medicine, or predictive screening tools used in education and by the police. In this long response, you will briefly describe the design and purpose of your data-driven decision system, explain how it relates to ideas discussed in class, and identify potential ethical concerns related to its use.
+
+## Instructions
+
+2. **(3 points)** Introduce your decision system. Who created it? Who are its users? Who are its subjects? What purpose does it serve?
+2. **(3 points)** What, if any, algorithms are involved? Why do these satisfy the definition of algorithm? What are the inputs and outputs?
+2. **(3 points)** Explain how the algorithms work. If technical details are unavailable, explain why they are unavailable and to the best of your ability, use available information to explain how such algorithms typically work.
+2. **(3 points)** Identify potential ethical concerns.
+2. **(3 points)** Submissions should be carefully edited.

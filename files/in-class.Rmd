@@ -1,0 +1,53 @@
+---
+title: "In Class Assignments"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Format
+
+
+## Overview
+
+
+* **Week One:** Write down every algorithm
+
+* **Week Two:** Concept map
+
+* **Week Three:** Identifying
+
+* **Week Four:** Pros and Cons of FRT
+
+* **Week Five:** Identifying
+
+For your final project, you will research a topic related to the course material, develop and give a presentation on your findings, and write a brief report explaining your topic in an engaging and accessible manner.
+
+* **Option One:** Choose a prediction/decision-making problem for which algorithms are being used or developed. Are algorithmic systems the only way to address this problem? What are the implications of using algorithms in this context?
+
+* **Option Two:** Choose your own topic.
+
+## Part One: Project Proposal (10 points)
+
+2. **(3 points)** Introduce your decision system. Who created it? Who are its users? Who are its subjects? What purpose does it serve?
+2. **(3 points)** What, if any, algorithms are involved? Why do these satisfy the definition of algorithm? What are the inputs and outputs?
+2. **(3 points)** Explain how the algorithms work. If technical details are unavailable, explain why they are unavailable and to the best of your ability, use available information to explain how such algorithms typically work.
+2. **(3 points)** Identify potential ethical concerns.
+2. **(3 points)** Submissions should be carefully edited.
+
+## Part Two: Presentation (10 points)
+
+2. **(3 points)** Introduce your decision system. Who created it? Who are its users? Who are its subjects? What purpose does it serve?
+2. **(3 points)** What, if any, algorithms are involved? Why do these satisfy the definition of algorithm? What are the inputs and outputs?
+2. **(3 points)** Explain how the algorithms work. If technical details are unavailable, explain why they are unavailable and to the best of your ability, use available information to explain how such algorithms typically work.
+2. **(3 points)** Identify potential ethical concerns.
+2. **(3 points)** Submissions should be carefully edited.
+
+## Part Three: Final Report (10 points)
+
+5-7 pages 
+
+Other formats are acceptable, including podcast, video, website.
+
+## Part Four: Reflection and Self-evaluation (5 points)

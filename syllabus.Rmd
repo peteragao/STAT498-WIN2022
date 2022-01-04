@@ -14,7 +14,7 @@ title: "Syllabus"
 
 **Location**: 	THO 335
 
-**Office hours**: T 12:30 - 2:20 via Zoom ([meeting link](https://washington.zoom.us/j/93622340821))
+**Office hours**: T 12:30 - 2:20 via Zoom ([meeting link](https://washington.zoom.us/j/95175609926))
 
 **Note**: When emailing the instructor, please include "[STAT 498]" at the beginning of the email header!
 It will help us respond to you faster.
@@ -111,9 +111,7 @@ If you have not yet established services through DRS, but have a temporary healt
 Diverse backgrounds, embodiments, and experiences are essential to the critical thinking endeavor at the heart of university education. Therefore, I expect you to follow the UW Student Conduct Code in your interactions with your colleagues and me in this course by respecting the many social and cultural differences among us, which may include, but are not limited to: age, cultural background, disability, ethnicity, family status, gender identity and presentation, citizenship and immigration status, national origin, race, religious and political beliefs, sex, sexual orientation, socioeconomic status, and veteran status.
 
 ### Religious accommodations
-Washington state law requires that UW develop a policy for accommodation of student absences or significant hardship due to reasons of faith or conscience, or for organized religious activities. The UW’s policy, including more information about how to request an accommodation, is available at https://registrar.washington.edu/staffandfaculty/religious-accommodations-policy/.
-
-Accommodations must be requested within the first two weeks of this course using the  https://registrar.washington.edu/students/religious-accommodations-request/
+Washington state law requires that UW develop a policy for accommodation of student absences or significant hardship due to reasons of faith or conscience, or for organized religious activities. The UW’s policy, including more information about how to request an accommodation, is available at [Religious Accommodations Policy](https://registrar.washington.edu/staffandfaculty/religious-accommodations-policy/) (https://registrar.washington.edu/staffandfaculty/religious-accommodations-policy/). Accommodations must be requested within the first two weeks of this course using the [Religious Accommodations Request form](https://registrar.washington.edu/students/religious-accommodations-request/) (https://registrar.washington.edu/students/religious-accommodations-request/).
 
 ### Student privacy
 Note that the software used in this class (e.g. Canvas, Zoom, Panopto) when used with our UW Net IDs, are FERPA compliant (https://registrar.washington.edu/students/ferpa/). This means they do not monitor student use of their service and they do not share student data with third parties. 

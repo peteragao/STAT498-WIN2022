@@ -8,7 +8,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Format
 
-Length: 3-4 pages, 12 point font, double spaced. 
+Length: 3-5 pages, 12 point font, double spaced. 
 
 
 ## Overview
@@ -21,9 +21,9 @@ In this first long response assignment, you will select and study one data-drive
 2. Your long response should include the following sections:
 
     * **Introduction (3 points):** Introduce your decision system. What purpose does it serve? Who created it? Who are its users? Who are its subjects? 
-    * **Overview of algorithm (3 points):** What, if any, algorithms are involved? Why do these satisfy the definition of algorithm? What are the inputs and outputs?
+    * **Overview of algorithm (3 points):** What, if any, algorithms/automated systems are involved? Why do these satisfy the definition of algorithm? What are the inputs and outputs?
     * **Technical information (3 points):** Explain how the algorithms work. If technical details are unavailable, explain why they are unavailable and to the best of your ability, use available information to explain how such algorithms typically work.
-    * **Ethical issues (3 points):** Identify potential ethical concerns related to your decision system. For each ethical concern raised, be sure to identify potential remedies if there are any.
+    * **Ethical issues (3 points):** Identify potential ethical concerns and harms related to your decision system. For each ethical concern/harm raised, be sure to identify potential remedies if there are any.
 
 3. Finally, your long response will also be graded on the following criterion: 
 

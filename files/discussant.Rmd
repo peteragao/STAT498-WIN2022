@@ -10,6 +10,8 @@ knitr::opts_chunk$set(echo = FALSE)
 
 Each student will be designated as one of the discussants for one class section this quarter. As a discussant, you will help me facilitate the class by outlining the key ideas in each reading and preparing discussion questions. At times, I may also call on you to briefly explain some of the ideas in the readings or to share your thoughts or opinions. Although you will be expected to read and prepare carefully, you are not expected to be able to answer every question and you will not have to be the only one speaking. Above all, I hope to see that you are making an effort to lead the discussion and to engage with questions: do not worry if you forget something from the reading or do not have the answer for a particular question. 
 
+If you are the discussant for the same class as another student, I encourage you to contact them and discuss the readings/questions ahead of time.
+
 ## Instructions
 
 1. Carefully read the texts for your assigned class section and take notes on the key ideas and themes.

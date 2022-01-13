@@ -9,7 +9,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ### [Instructions for Discussants](files/discussant.html)
 
-### Response 1 (tentative due date: 1/25)
+### [Response 1 (due date: 1/25)](files/responses/01_definitions.html)
 
 ### Response 2 (tentative due date: 2/8)
 

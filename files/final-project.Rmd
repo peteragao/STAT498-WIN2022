@@ -11,32 +11,34 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Overview
 
-For your final project, you will research a topic related to the course material, develop and give a presentation on your findings, and write a brief report explaining your topic in an engaging and accessible manner.
+For your final project, you will work in groups of up to three to research a topic related to the course material, develop and give a presentation on your findings, and write a brief report explaining your topic in an engaging and accessible manner.
 
-* **Option One:** Choose a prediction/decision-making problem for which algorithms are being used or developed. Are algorithmic systems the only way to address this problem? What are the implications of using algorithms in this context?
+* **Option 1a:** Imagine you are a consultant hired to audit automated decision systems. Choose a particular prediction algorithm/decision-making algorithm used by a company or a governmental agency. Identify potential ethical concerns and provide concrete recommendations for mitigating potential problems. Create a report/presentation detailing your findings.
 
-* **Option Two:** Choose your own topic.
+* **Option 1b:** Imagine you are a researcher leading a government task force on accountability in algorithmic decision-making. Choose a particular prediction/decision-making problem for which algorithms are being used or developed. Identify potential ethical concerns and provide concrete recommendations for mitigating potential problems. Create a report/presentation detailing your findings.
 
-## Part One: Project Proposal (10 points)
+* **Option 2:** Choose your own topic (have it approved by me before starting). Be creative--above all, you are encouraged to pursue topics that excite you. 
 
-2. **(3 points)** Introduce your decision system. Who created it? Who are its users? Who are its subjects? What purpose does it serve?
-2. **(3 points)** What, if any, algorithms are involved? Why do these satisfy the definition of algorithm? What are the inputs and outputs?
-2. **(3 points)** Explain how the algorithms work. If technical details are unavailable, explain why they are unavailable and to the best of your ability, use available information to explain how such algorithms typically work.
-2. **(3 points)** Identify potential ethical concerns.
-2. **(3 points)** Submissions should be carefully edited.
+Project grades will be based on depth of analysis, research beyond course readings, quality of presentation, organization, and originality. 
 
-## Part Two: Presentation (10 points)
+## Part One: Project Proposal (3 points), due 2/8
 
-2. **(3 points)** Introduce your decision system. Who created it? Who are its users? Who are its subjects? What purpose does it serve?
-2. **(3 points)** What, if any, algorithms are involved? Why do these satisfy the definition of algorithm? What are the inputs and outputs?
-2. **(3 points)** Explain how the algorithms work. If technical details are unavailable, explain why they are unavailable and to the best of your ability, use available information to explain how such algorithms typically work.
-2. **(3 points)** Identify potential ethical concerns.
-2. **(3 points)** Submissions should be carefully edited.
+You will submit a 1-2 page project proposal with the following information:
 
-## Part Three: Final Report (10 points)
+* A brief description of your topic/algorithm/prediction problem.
+* A list of your group members.
+* An overview of the main research questions you hope to explore through your project.
+* A list of at least five references you plan to consult for your research.
+* Any questions you have for me.
 
-5-7 pages 
+## Part Two: Presentation (15 points)
 
-Other formats are acceptable, including podcast, video, website.
+15-20 minutes, including time for discussion. More detailed instructions will be provided.
 
-## Part Four: Reflection and Self-evaluation (5 points)
+## Part Three: Final Report (15 points)
+
+5-7 pages. Other formats are acceptable with approval of the instructor, including podcast, video, website. More detailed instructions will be provided.
+
+## Part Four: Reflection and Self-evaluation (2 points).
+
+More detailed instructions will be provided.

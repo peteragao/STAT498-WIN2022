@@ -11,9 +11,9 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ### [Response 1 (due date: 1/25)](files/responses/01_definitions.html)
 
-### Response 2 (tentative due date: 2/8)
+### Response 2 (tentative due date: 2/15)
 
 ### Response 3 (tentative due date: 3/1)
 
-### Final project (write-up due: 3/14)
+### [Final project (proposal due 2/8)](files/final-project.html)
 

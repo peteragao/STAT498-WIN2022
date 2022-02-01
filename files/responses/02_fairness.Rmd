@@ -1,29 +1,22 @@
 ---
-title: "Long Response 1: Case Studies"
+title: "Long Response 2: Statistical Definitions of Fairness"
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-## Format
-
-Length: 3-5 pages, 12 point font, double spaced. 
-
-
 ## Overview
 
+In this assignment, you will apply what we've discussed about statistical definitions of fairness. Read [this article](https://themarkup.org/news/2021/03/02/major-universities-are-using-race-as-a-high-impact-predictor-of-student-success) and [this article](https://www.apmreports.org/episode/2019/08/06/college-data-tracking-students-graduation) detailing the use of algorithms to predict student success in higher education.
 
-https://themarkup.org/news/2021/03/02/major-universities-are-using-race-as-a-high-impact-predictor-of-student-success
-https://www.apmreports.org/episode/2019/08/06/college-data-tracking-students-graduation
-predictive parity vs erorr rate balance / equal prediction and equal decision
-
-In this first long response assignment, you will select and study one data-driven decision system. For the purpose of this assignment, we define an data-driven decision system as a system or process that uses computation and data to make automated predictions and decisions about individual people or groups of people. For example, although Newton's method is an algorithm, it is not in itself an data-driven decision system. Some examples that would be appropriate include recommendation systems used by technology and social media companies, diagnostic algorithms used in medicine, or predictive screening tools used in education and by the police. In this long response, you will briefly describe the design and purpose of your data-driven decision system, explain how it relates to ideas discussed in class, and identify potential ethical concerns related to its use.
+Consider an algorithm that outputs a score $S$ that measures a student's risk of not graduating on time. Inputs $X$ can include grades and other data discussed in the above articles. Suppose this score $S$ is used to make predictions about $Y$, where $Y=1$ is the student graduates on time and $Y=0$ if not. Suppose $R$ describes race. Using the definitions in Chouldechova (2017), answer the following questions.
 
 ## Instructions
 
-2. **(3 points)** Introduce your decision system. Who created it? Who are its users? Who are its subjects? What purpose does it serve?
-2. **(3 points)** What, if any, algorithms are involved? Why do these satisfy the definition of algorithm? What are the inputs and outputs?
-2. **(3 points)** Explain how the algorithms work. If technical details are unavailable, explain why they are unavailable and to the best of your ability, use available information to explain how such algorithms typically work.
-2. **(3 points)** Identify potential ethical concerns.
-2. **(3 points)** Submissions should be carefully edited.
+1. **(2 points)** Explain, in plain language, what calibration means in this context.
+2. **(2 points)** Explain, in plain language, what predictive parity means in this context.
+3. **(2 points)** Explain, in plain language, what error rate balance means in this context.
+4. **(3 points)** Do the algorithms described in the articles above violate any of the above definitions of fairness?
+5. **(3 points)** In your opinion, which of the three defintions of fairness above would be the most important to satisfy in this context? Why?
+6. **(3 points)** If such an algorithm were shown to satisfy your preferred definition of fairness, would you be comfortable with its use in this context? What other ethical concerns should we consider?

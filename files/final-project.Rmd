@@ -33,12 +33,27 @@ You will submit a 1-2 page project proposal with the following information:
 
 ## Part Two: Presentation (15 points)
 
-15-20 minutes, including time for discussion. More detailed instructions will be provided.
+10 minutes + 5 minutes for discussion.
+
+If you select Option 1, you should prepare as if you are presenting your final recommendations to a client. In particular, you should be sure to cover the following areas:
+
+* **Introduction:** Introduce and define your topic. Provide an example illustrating how the algorithms you study are intended to be used. 
+* **Ethical concerns:** What are potential ethical concerns related to your topic? If there are existing criticisms of your algorithm, be sure to discuss them.
+* **Recommendations:**  Describe any existing solutions that are being tried and whether they have been effective. What more could be done to address these concerns? For each ethical concern, be sure to provide at least one concrete recommendation for what could be done.
 
 ## Part Three: Final Report (15 points)
 
-5-7 pages. Other formats are acceptable with approval of the instructor, including podcast, video, website. More detailed instructions will be provided.
+5-7 pages. Other formats are acceptable with approval of the instructor, including podcast, video, website.
+
+Present a final report expanding on your presentation. You do not have to write this in the form of an essay, but you should present your findings in a clear and organized way. In addition to the topics listed above, you should cover the following:
+
+* **Technical details:** How does your algorithm/group of algorithms typically work? What are the inputs and outputs? Where possible, provide details on the actual methods used, but keep the explanation at a level that is accessible to your client.
+* **Connections:**  If you are studying one particular algorithm, discuss any other competing algorithms that are used in your setting and whether they have the same issues. If you are studying a group of algorithms, discuss any other decision-making problems where similar ethical concerns arise. If possible, connect your topic to readings/ideas covered in class.
 
 ## Part Four: Reflection and Self-evaluation (2 points).
 
-More detailed instructions will be provided.
+1-2 pages. Answer the following questions:
+
+1. At the beginning of the class, we discussed techno-optimism and techno-pessimism. What, if anything, about your answer has changed? What hasn't changed?
+2. What is one thing that you feel you did well in this class? What is one area in which you wish to improve in the future?
+3. What, if any, topics did you enjoy reading about and discussing most? What, if any, topics did you not enjoy discussing?

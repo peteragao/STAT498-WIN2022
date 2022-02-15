@@ -8,23 +8,29 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Format
 
-Length: 3-4 pages, 12 point font, double spaced. 
+Length: 3-5 pages, 12 point font, double spaced. 
 
 
 ## Overview
 
-In this first long response assignment, you will select and study one data-driven decision system. For the purpose of this assignment, we define an data-driven decision system as a system or process that uses computation and data to make automated predictions and decisions about individual people or groups of people. For example, although Newton's method is an algorithm, it is not in itself an data-driven decision system. Some examples that would be appropriate include recommendation systems used by technology and social media companies, diagnostic algorithms used in medicine, or predictive screening tools used in education and by the police. In this long response, you will briefly describe the design and purpose of your data-driven decision system, explain how it relates to ideas discussed in class, and identify potential ethical concerns related to its use.
+When ethical concerns arise as a result of algorithmic decision-making systems, how can we respond? In this long response assignment, you will select and study one remedy or form of resistance to algorithmic decision-making. Some examples to consider:
+
+  * Regulation via legislation
+  * Consumer boycotts
+  * Worker-led organizing (ex. walkouts)
+  * Algorithmic fairness research
+
+In your long response, you should outline your chosen form of resistance, identify actual examples where it has been applied, and discuss when and where it could be an effective response to abuses of algorithmic decision-making.
 
 ## Instructions
 
-1. Identify a decision system for your assignment and compile references you can draw on for your long response.
-2. Your long response should include the following sections:
+1. Your long response should include the following sections:
 
-    * **Introduction (3 points):** Introduce your decision system. What purpose does it serve? Who created it? Who are its users? Who are its subjects? 
-    * **Overview of algorithm (3 points):** What, if any, algorithms are involved? Why do these satisfy the definition of algorithm? What are the inputs and outputs?
-    * **Technical information (3 points):** Explain how the algorithms work. If technical details are unavailable, explain why they are unavailable and to the best of your ability, use available information to explain how such algorithms typically work.
-    * **Ethical issues (3 points):** Identify potential ethical concerns related to your decision system. For each ethical concern raised, be sure to identify potential remedies if there are any.
+    * **Introduction (3 points):** Introduce and define your form of resistance. Who are the main actors or participants? 
+    * **Historical examples (3 points):** Identify at least two examples where your form of resistance has been used to respond to algorithmic decision-making and discuss whether it was effective.
+    * **Possibilities (3 points):** What kind of ethical concerns can be addressed via your selected form of resistance? Identify ways in which your selected form of resistance could be effective.
+    * **Shortcomings (3 points):** What kind of ethical concerns cannot be addressed via your selected form of resistance? Identify ways in which your selected form of resistance may not address all possible concerns?
 
-3. Finally, your long response will also be graded on the following criterion: 
+2. Finally, your long response will also be graded on the following criterion: 
 
     * **Presentation/exposition (3 points):** Submissions should be carefully edited, with citations for all resources used.
